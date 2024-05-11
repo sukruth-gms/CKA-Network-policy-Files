@@ -18,7 +18,7 @@ spec:
         tier: application
     spec:
       containers:
-      - image: nginxinc/nginx-unprivileged
+      - image: nginx:latest
         name: nginx
         resources: {}
 status: {}
