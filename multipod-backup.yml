@@ -11,12 +11,6 @@ spec:
     volumeMounts:
     - mountPath: /var/log/nginx
       name: hostpath
-  - image: busybox:1.28
-    name: sidecar
-    command: ['sh','-c', 'tail -f /var/busybox/log/*.log']
-    volumeMounts:
-    - mountPath: /var/busybox/log
-      name: hostpath
   volumes:
   - hostPath:
       path: /var/volume
